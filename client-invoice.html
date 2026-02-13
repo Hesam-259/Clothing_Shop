@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tees - T-shirt eCommerce Website Template</title>
+    <title>Tees - Client Invoice</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +41,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/client/my-account.css" />
+    <link rel="stylesheet" type="text/css" href="css/client-orders.css" />
   </head>
 
   <body class="hompage">
@@ -298,149 +299,100 @@
       >
         <div class="banner-content text-center m-auto">
           <div class="content-light text-center">
-            <h1 class="page-title">My Account</h1>
+            <h1 class="page-title">Invoice</h1>
             <div class="breadcrumbs">
               <span class="item">
                 <a href="index.html">Home /</a>
               </span>
-              <span class="item">Account</span>
+              <span class="item">Invoice</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Account Part -->
-    <section class="account-part">
+    <!-- Client Invoice Part -->
+    <section class="client-invoice-part">
       <div class="container">
-        <div class="account-header">
-          <h2>Welcome back, John Doe!</h2>
+        <div class="client-invoice-header">
+          <h2>Invoice #INV-1001</h2>
+          <p>Review purchased items from your paid order.</p>
         </div>
 
-        <div class="account-info justify-content-between row">
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>John Doe</h3>
-            <p>Email: johndoe@example.com</p>
-            <p>Phone: +55 111 222 333 44</p>
-            <p>Address: 123 Main St, City, Country</p>
-            <p>Postal code: 01234-56789</p>
-            <p>City: Frankfort</p>
-            <a href="/edit-account.html" class="edit-profile-btn d-inline-block"
-              >Edit Profile</a
-            >
+        <div class="client-invoice-card">
+          <div class="client-invoice-actions mb-4">
+            <a href="client-orders.html" class="btn btn-common">Back to Orders</a>
+            <a href="#" class="btn btn-outline-dark">Print</a>
+          </div>
 
-            <div class="account-actions">
-              <button class="logout-btn">Logout</button>
-              <button class="delete-account-btn">Delete Account</button>
+          <div class="client-invoice-meta">
+            <div>
+              <h4>Billing Information</h4>
+              <p><strong>Name:</strong> John Doe</p>
+              <p><strong>Email:</strong> johndoe@example.com</p>
+              <p><strong>Phone:</strong> +55 111 222 333 44</p>
+              <p><strong>Address:</strong> 123 Main St, City, Country</p>
+            </div>
+            <div>
+              <h4>Order Information</h4>
+              <p><strong>Order ID:</strong> #ORD-1001</p>
+              <p><strong>Date:</strong> 2024-01-15</p>
+              <p><strong>Payment:</strong> Credit Card</p>
+              <p><strong>Status:</strong> Paid</p>
             </div>
           </div>
 
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>Cart</h3>
-            <p>You have 3 items in your cart</p>
-            <ul class="orders-list">
-              <li>T-Shirt Cool - $25.00</li>
-              <li>Hoodie Sport - $45.00</li>
-              <li>Shorts Active - $30.00</li>
-            </ul>
-            <button class="btn btn-common">View Cart</button>
+          <div class="client-invoice-table-wrapper">
+            <table class="table client-invoice-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Qty</th>
+                  <th>Unit Price</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Classic Cotton Tee</td>
+                  <td>1</td>
+                  <td>$39.00</td>
+                  <td>$39.00</td>
+                </tr>
+                <tr>
+                  <td>Premium Polo Shirt</td>
+                  <td>1</td>
+                  <td>$69.00</td>
+                  <td>$69.00</td>
+                </tr>
+                <tr>
+                  <td>Athletic Tank Top</td>
+                  <td>1</td>
+                  <td>$33.00</td>
+                  <td>$33.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>My Orders</h3>
-            <ul class="orders-list">
-              <li>Order #12345 - Delivered</li>
-              <li>Order #12344 - Shipped</li>
-              <li>Order #12343 - Processing</li>
-              <li><a href="client-orders.html">View All Orders</a></li>
-            </ul>
-            <a href="client-orders.html" class="btn btn-common">My Paid Orders</a>
-          </div>
-
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>Account Overview</h3>
-            <p>Total Orders: 12</p>
-            <p>Liked Products: 24</p>
-            <p>Comments Posted: 8</p>
-          </div>
-
-          <div class="profile-card col-12 mb-5">
-            <h3>Commented Products</h3>
-            <ul class="comments-list">
-              <li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li>
-              <li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li><li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li><li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li>
-            </ul>
-          </div>
-
-          <div class="profile-card col-12 mb-5">
-            <h3>Liked Products</h3>
-            <!-- Splide Container -->
-            <div id="liked-products-slider" class="splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <!-- Slide 1 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 1"
-                      />
-                      <p>T-Shirt Blue</p>
-                    </div>
-                  </li>
-                  <!-- Slide 2 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 2"
-                      />
-                      <p>Hoodie Black</p>
-                    </div>
-                  </li>
-                  <!-- Slide 3 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 3"
-                      />
-                      <p>Polo Red</p>
-                    </div>
-                  </li>
-                  <!-- Slide 4 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 4"
-                      />
-                      <p>Jeans Classic</p>
-                    </div>
-                  </li>
-                  <!-- Slide 5 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 5"
-                      />
-                      <p>Jacket Winter</p>
-                    </div>
-                  </li>
-                  <!-- Add more slides as needed -->
-                </ul>
-              </div>
+          <div class="client-invoice-totals">
+            <h4>Totals</h4>
+            <div class="client-invoice-total-row">
+              <span>Subtotal</span>
+              <span>$141.00</span>
             </div>
-            <!-- End of Splide Container -->
+            <div class="client-invoice-total-row">
+              <span>Shipping</span>
+              <span>$6.00</span>
+            </div>
+            <div class="client-invoice-total-row">
+              <span>Tax</span>
+              <span>$0.00</span>
+            </div>
+            <div class="client-invoice-total-row total">
+              <span>Grand Total</span>
+              <span>$147.00</span>
+            </div>
           </div>
         </div>
       </div>

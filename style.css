@@ -104,7 +104,6 @@ CSS STRUCTURE:
 }
 
 @media (min-width: 1400px) {
-
   .container,
   .container-lg,
   .container-md,
@@ -115,16 +114,15 @@ CSS STRUCTURE:
   }
 }
 
-
 /* Theme Colors */
 :root {
   --accent-color: rgb(0, 0, 0);
-  --accent-dim-color: #E5D8D5;
+  --accent-dim-color: #e5d8d5;
   --accent-lighted-color: rgba(241, 228, 225, 0.5);
-  --accent-lit-color: #F6ECEA;
+  --accent-lit-color: #f6ecea;
   --dark-grey-color: #737373;
   --dark-color: #040404;
-  --grey-color: #A9A09E;
+  --grey-color: #a9a09e;
   --light-color: #fff;
   --primary-color: #111111;
   --primary-lighted-color: rgba(246, 236, 234, 0.9);
@@ -136,7 +134,6 @@ CSS STRUCTURE:
   --body-font: "Outfit", sans-serif;
   --heading-font: "Urbanist", sans-serif;
 }
-
 
 /*----------------------------------------------*/
 /* 2 GENERAL TYPOGRAPHY */
@@ -329,7 +326,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2.0em;
+  font-size: 2em;
   line-height: 1.4;
 }
 
@@ -347,13 +344,13 @@ h4,
 
 h5,
 .h5 {
-  font-size: .83em;
+  font-size: 0.83em;
   line-height: 1.25;
 }
 
 h6,
 .h6 {
-  font-size: .67em;
+  font-size: 0.67em;
   line-height: 1.1;
 }
 
@@ -543,7 +540,7 @@ select:focus {
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
@@ -557,9 +554,9 @@ input[type="radio"] {
   display: inline;
 }
 
-label>.label-body {
+label > .label-body {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   font-weight: normal;
 }
 
@@ -596,14 +593,14 @@ li {
 /* 2.5 Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--light-color);
 }
 
-pre>code {
+pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: normal;
@@ -632,7 +629,6 @@ td:last-child {
   padding-right: 0;
 }
 
-
 /*------------------------------------------------
 /* 2.7 Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -656,7 +652,6 @@ table,
 form {
   margin-bottom: 2rem;
 }
-
 
 /*------------------------------------------------
 /* 2.8 Utilities
@@ -781,7 +776,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 img.align-left {
@@ -969,7 +964,7 @@ fieldset[disabled] a.btn {
 
 .btn.btn-full {
   display: block;
-  margin: .85em 0;
+  margin: 0.85em 0;
   width: 100%;
   letter-spacing: 0.12em;
 }
@@ -979,6 +974,8 @@ fieldset[disabled] a.btn {
 .btn.btn-common {
   background: var(--dark-color);
   color: var(--light-color);
+  border: 2px solid transparent;
+  padding: 0.75em 1.5em;
 }
 
 .btn.btn-common:hover {
@@ -1103,12 +1100,10 @@ h3.post-title {
 }
 
 @media only screen and (max-width: 699px) {
-
   h2.banner-title,
   h1.page-title {
     font-size: 3em;
   }
-
 }
 
 /* - Background Colors
@@ -1308,12 +1303,13 @@ blockquote cite {
 .text-animation {
   overflow: hidden;
   white-space: pre-line;
-  border-right: solid 5px rgba(255, 255, 255, .75);
+  border-right: solid 5px rgba(255, 255, 255, 0.75);
 }
 
 /* Animation */
 .text-animation {
-  animation: animated-text 4s linear 1s 1 normal both,
+  animation:
+    animated-text 4s linear 1s 1 normal both,
     animated-cursor 600ms linear infinite;
 }
 
@@ -1331,14 +1327,13 @@ blockquote cite {
 /* cursor animations */
 @keyframes animated-cursor {
   from {
-    border-right-color: rgba(255, 255, 255, .75);
+    border-right-color: rgba(255, 255, 255, 0.75);
   }
 
   to {
     border-right-color: transparent;
   }
 }
-
 
 /*====================================================================*/
 /* 5. CONTENT ELEMENTS */
@@ -1366,8 +1361,6 @@ blockquote cite {
   --bs-dropdown-link-active-color: var(--bs-light);
   --bs-dropdown-link-active-bg: var(--bs-light);
 }
-
-
 
 /*--------------------------------------------------------------
 /** 5.2 Accordions
@@ -1403,7 +1396,12 @@ blockquote cite {
   box-shadow: none;
   overflow-anchor: none;
   background-color: var(--light-background-color);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1582,7 +1580,6 @@ This is main CSS file that contains custom style rules used in this template
 }
 
 @media only screen and (max-width: 768px) {
-
   .margin-small,
   .margin-medium,
   .margin-large {
@@ -1590,7 +1587,6 @@ This is main CSS file that contains custom style rules used in this template
     margin-bottom: 1em;
   }
 }
-
 
 /*====================================================================*/
 /* 6. BLOG STYLES */
@@ -1675,7 +1671,7 @@ header#header .header-wrap {
 }
 
 .navbar .search-item input {
-  font-weight: 500; 
+  font-weight: 500;
   padding-left: 10px;
 }
 
@@ -1747,15 +1743,12 @@ a.text-black.text-uppercase.dropdown-item:hover {
 
 @media only screen and (max-width: 1200px) {
   .main-menu .hamburger {
-
     top: 20px;
     left: 60px;
-
   }
 }
 
 @media only screen and (max-width: 1599px) {
-
   .dropdown-menu.show {
     display: contents;
   }
@@ -1790,7 +1783,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-
   .main-menu ul.menu-list.responsive a {
     font-size: 2em;
     color: var(--light-color);
@@ -1815,7 +1807,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     padding: 10px;
     cursor: pointer;
     direction: ltr;
-
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -1860,8 +1851,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     top: 15px;
   }
 }
-
-
 
 @media only screen and (max-width: 1200px) {
   .header-wrap .row {
@@ -1915,7 +1904,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     color: var(--dark-color);
   }
 }
-
 
 /* - Billboard Style1
 --------------------------------------------------------------*/
@@ -2003,7 +1991,9 @@ a.text-black.text-uppercase.dropdown-item:hover {
   margin-right: 30px;
 }
 
-#billboard .swiper-pagination1 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+#billboard
+  .swiper-pagination1
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: var(--swiper-theme-color);
 }
 
@@ -2034,7 +2024,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     display: none;
   }
 }
-
 
 /* - Company Services Horizontal
 --------------------------------------------------------------*/
@@ -2110,12 +2099,12 @@ a.text-black.text-uppercase.dropdown-item:hover {
 }
 
 .product-store .swiper-button.swiper-button-prev:after {
-  content: '\e90c';
+  content: "\e90c";
   font-family: "icomoon";
 }
 
 .product-store .swiper-button.swiper-button-next:after {
-  content: '\e90d';
+  content: "\e90d";
   font-family: "icomoon";
 }
 
@@ -2141,8 +2130,9 @@ a.text-black.text-uppercase.dropdown-item:hover {
     position: relative;
   }
 
-  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
-    content: '';
+  .swiper-pagination
+    .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
@@ -2160,7 +2150,6 @@ a.text-black.text-uppercase.dropdown-item:hover {
     display: flex;
   }
 }
-
 
 /* - Video
 --------------------------------------------------------------*/
@@ -2189,7 +2178,6 @@ iconify-icon.video-icon {
   animation: playAnimation 2s infinite alternate;
 }
 
-
 @keyframes playAnimation {
   0% {
     font-size: 35px;
@@ -2199,7 +2187,6 @@ iconify-icon.video-icon {
     font-size: 60px;
   }
 }
-
 
 /* - Video Style2
 --------------------------------------------------------------*/
@@ -2212,7 +2199,6 @@ iconify-icon.video-icon {
     margin-top: 50px;
   }
 }
-
 
 /* - Testimonial
 --------------------------------------------------------------*/
@@ -2248,7 +2234,6 @@ iconify-icon.video-icon {
   align-items: center;
   cursor: pointer;
 }
-
 
 #testimonials .swiper-pagination {
   display: none;
@@ -2382,7 +2367,6 @@ img.post-image {
 
 /* - Instagram
 --------------------------------------------------------------*/
-
 
 .instagram-item:before {
   content: "";
@@ -2585,7 +2569,7 @@ img.insta-image {
   text-align: center;
   cursor: pointer;
   background-color: var(--accent-color);
-  transition: .5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .qty-number .quntity-button:hover {
@@ -2604,7 +2588,6 @@ img.insta-image {
 .qty-field .regular-price {
   display: none;
 }
-
 
 /* ------ Button ------*/
 .stock-button-wrap .like-button {
@@ -2664,7 +2647,6 @@ img.insta-image {
   padding-left: 50px;
 }
 
-
 /* - About Us Page
 --------------------------------------------------------------*/
 #about-us .section-header {
@@ -2720,7 +2702,6 @@ img.insta-image {
 .form-control:focus {
   box-shadow: none;
   background-color: transparent;
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -2728,7 +2709,6 @@ img.insta-image {
     margin-left: 20px;
   }
 }
-
 
 /* ----------- Search Bar -----------*/
 .shopify-grid select#input-sort {
@@ -2798,7 +2778,6 @@ img.insta-image {
   }
 }
 
-
 /* ----------- Pagination -----------*/
 .paging-navigation .pagination .page-numbers {
   font-size: 1.4em;
@@ -2810,10 +2789,8 @@ img.insta-image {
   color: var(--dark-grey-color);
 }
 
-
 /* - Single Product Page
 --------------------------------------------------------------*/
-
 
 /* product-thumbnail-slider */
 .thumb-swiper {
@@ -2832,7 +2809,6 @@ img.insta-image {
 .tabs-listing .nav-tabs button:hover {
   color: var(--dark-color);
   border-bottom: 2px solid var(--dark-color);
-
 }
 
 .tabs-listing .tab-content ul.list-unstyled {
@@ -2840,11 +2816,11 @@ img.insta-image {
   padding-left: 25px;
 }
 
-.tabs-listing .tab-content>.tab-pane {
+.tabs-listing .tab-content > .tab-pane {
   display: none;
 }
 
-.tabs-listing .tab-content>.active {
+.tabs-listing .tab-content > .active {
   display: block;
 }
 
@@ -2854,7 +2830,6 @@ img.insta-image {
   background-color: transparent;
   border-color: transparent;
   border-bottom: 2px solid var(--dark-color);
-
 }
 
 .nav-tabs {
@@ -2866,7 +2841,6 @@ img.insta-image {
   isolation: isolate;
   border-color: transparent;
   border-bottom: 2px solid var(--dark-color);
-
 }
 
 outline-accent:active,
@@ -2880,11 +2854,6 @@ button:active {
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: none;
 }
-
-
-
-
-
 
 ul.tabs {
   margin-bottom: 40px;
@@ -2903,7 +2872,6 @@ ul.tabs li.tab:hover {
   border-bottom: 2px solid var(--dark-color);
 }
 
-
 @media only screen and (max-width: 799px) {
   .tabs-listing .nav-tabs button {
     font-size: 1.4em;
@@ -2911,7 +2879,7 @@ ul.tabs li.tab:hover {
     margin: 0;
   }
 
-  .tabs-listing .tab-content>.active {
+  .tabs-listing .tab-content > .active {
     padding: 30px;
   }
 
@@ -2969,7 +2937,6 @@ ul.tabs li.tab:hover {
   }
 }
 
-
 /* - Checkout Page
 --------------------------------------------------------------*/
 .checkout-wrap label {
@@ -3010,7 +2977,6 @@ td.payment-method label {
   display: none;
 }
 
-
 /* - Blog with Sidebar
 --------------------------------------------------------------*/
 
@@ -3029,7 +2995,7 @@ td.payment-method label {
 
 /* - Single Post
 --------------------------------------------------------------*/
-.post-wrap .post-description p>strong {
+.post-wrap .post-description p > strong {
   font-size: 1.3em;
   font-weight: 300;
   color: var(--dark-color);
@@ -3099,7 +3065,6 @@ td.payment-method label {
   }
 }
 
-
 /* ----------- Leave Comment -----------*/
 form.form-group textarea,
 form.form-group input,
@@ -3146,8 +3111,6 @@ select.form-select {
   }
 }
 
-
-
 /*--------------------------------------------------------------
 Checkout page style start
 --------------------------------------------------------------*/
@@ -3165,8 +3128,6 @@ Checkout page style start
   box-shadow: none;
 }
 
-
-
 /*--------------------------------------------------------------
 faqs page style start
 --------------------------------------------------------------*/
@@ -3183,12 +3144,11 @@ faqs page style start
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url('https://api.iconify.design/eva/arrow-down-fill.svg?color=%2341403e');
-
+  background-image: url("https://api.iconify.design/eva/arrow-down-fill.svg?color=%2341403e");
 }
 
 .accordion-button::after {
-  background-image: url('https://api.iconify.design/eva/arrow-down-fill.svg?color=%2341403e');
+  background-image: url("https://api.iconify.design/eva/arrow-down-fill.svg?color=%2341403e");
 }
 
 .accordion-button:focus {

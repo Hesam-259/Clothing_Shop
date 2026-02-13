@@ -1,0 +1,100 @@
+/* Edit Profile Page Styles */
+.edit-profile-part {
+  padding: 4em 2em;
+  background-color: var(--light-color);
+}
+
+.edit-profile-header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.edit-profile-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: var(--dark-color);
+}
+
+.profile-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--light-color);
+  border: 1px solid var(--dark-color);
+  padding: 2em;
+}
+
+.profile-form .form-group {
+  margin-bottom: 1.5em;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid var(--dark-color);
+  background: transparent;
+  font-family: var(--body-font);
+}
+
+.profile-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.profile-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.update-btn {
+  background: var(--dark-color);
+  color: var(--light-color);
+  border: 2px solid transparent;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  transition: all 0.3s ease-in;
+}
+
+.update-btn:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.cancel-btn {
+  background: transparent;
+  color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+  padding: 0.75em 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  transition: all 0.3s ease-in;
+}
+
+.cancel-btn:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+@media (max-width: 768px) {
+  .profile-form-buttons {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .update-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

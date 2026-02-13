@@ -1,24 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tees - T-shirt eCommerce Website Template</title>
+    <title>Tees - Clothing Shop - Add Product</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="author" content="TemplatesJungle" />
-    <meta name="keywords" content="t-shirt ecommerce" />
-    <meta name="description" content="T-shirt eCommerce Website Template" />
+    <meta name="author" content="HesamDashtaki" />
+    <meta name="keywords" content="Clothing Shop" />
+    <meta name="description" content="Clothing Shop" />
 
-    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
-    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
-    <!-- Add this to the <head> section of your HTML -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/fonts/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css" />
     <!--Bootstrap ================================================== -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -27,7 +21,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
 
     <link
       rel="stylesheet"
@@ -40,28 +34,13 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/client/my-account.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard/index.css" />
   </head>
 
   <body class="hompage">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      <defs>
-        <symbol
-          xmlns="http://www.w3.org/2000/svg"
-          id="trash"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="currentColor"
-            d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"
-          />
-        </symbol>
-      </defs>
-    </svg>
-
     <header
       id="header"
-      class="nav-header content-light fixed-top border-bottom"
+      class="nav-header content-light fixed-top border-bottom bg-black"
     >
       <div class="header-wrap container py-3">
         <div class="row align-items-center pb-3 pb-lg-0">
@@ -245,7 +224,7 @@
             <div class="main-logo text-lg-center">
               <a href="index.html">
                 <img
-                  src="images/main-logo.png"
+                  src="/images/main-logo.png"
                   alt="logo"
                   class="brand-image"
                 />
@@ -284,317 +263,155 @@
       </div>
     </header>
 
-    <section id="banner">
-      <div
-        class="d-flex jarallax position-relative"
-        style="
-          background-image: url(images/hero-image.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: 55vh;
-          background-position: center;
-          height: 55vh;
-        "
-      >
-        <div class="banner-content text-center m-auto">
-          <div class="content-light text-center">
-            <h1 class="page-title">My Account</h1>
-            <div class="breadcrumbs">
-              <span class="item">
-                <a href="index.html">Home /</a>
-              </span>
-              <span class="item">Account</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Account Part -->
-    <section class="account-part">
+    <!-- Admin Dashboard - Add Product -->
+    <section class="admin-dashboard">
       <div class="container">
-        <div class="account-header">
-          <h2>Welcome back, John Doe!</h2>
+        <div class="admin-header">
+          <h2>Add New Product</h2>
+          <p>Create a new product with the same dashboard template</p>
         </div>
 
-        <div class="account-info justify-content-between row">
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>John Doe</h3>
-            <p>Email: johndoe@example.com</p>
-            <p>Phone: +55 111 222 333 44</p>
-            <p>Address: 123 Main St, City, Country</p>
-            <p>Postal code: 01234-56789</p>
-            <p>City: Frankfort</p>
-            <a href="/edit-account.html" class="edit-profile-btn d-inline-block"
-              >Edit Profile</a
+        <div class="admin-nav">
+          <h3>Navigation</h3>
+          <ul class="list-group">
+            <li
+              class="list-group-item p-0 border-dark border-bottom-0 overflow-hidden"
             >
-
-            <div class="account-actions">
-              <button class="logout-btn">Logout</button>
-              <button class="delete-account-btn">Delete Account</button>
-            </div>
-          </div>
-
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>Cart</h3>
-            <p>You have 3 items in your cart</p>
-            <ul class="orders-list">
-              <li>T-Shirt Cool - $25.00</li>
-              <li>Hoodie Sport - $45.00</li>
-              <li>Shorts Active - $30.00</li>
-            </ul>
-            <button class="btn btn-common">View Cart</button>
-          </div>
-
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>My Orders</h3>
-            <ul class="orders-list">
-              <li>Order #12345 - Delivered</li>
-              <li>Order #12344 - Shipped</li>
-              <li>Order #12343 - Processing</li>
-              <li><a href="client-orders.html">View All Orders</a></li>
-            </ul>
-            <a href="client-orders.html" class="btn btn-common">My Paid Orders</a>
-          </div>
-
-          <div class="profile-card col-12 col-md-5 mb-5">
-            <h3>Account Overview</h3>
-            <p>Total Orders: 12</p>
-            <p>Liked Products: 24</p>
-            <p>Comments Posted: 8</p>
-          </div>
-
-          <div class="profile-card col-12 mb-5">
-            <h3>Commented Products</h3>
-            <ul class="comments-list">
-              <li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li>
-              <li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li><li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li><li>T-Shirt Classic - "Great quality!"</li>
-              <li>Sweater Warm - "Perfect fit"</li>
-              <li>Jeans Slim - "Comfortable material"</li>
-            </ul>
-          </div>
-
-          <div class="profile-card col-12 mb-5">
-            <h3>Liked Products</h3>
-            <!-- Splide Container -->
-            <div id="liked-products-slider" class="splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <!-- Slide 1 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 1"
-                      />
-                      <p>T-Shirt Blue</p>
-                    </div>
-                  </li>
-                  <!-- Slide 2 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 2"
-                      />
-                      <p>Hoodie Black</p>
-                    </div>
-                  </li>
-                  <!-- Slide 3 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 3"
-                      />
-                      <p>Polo Red</p>
-                    </div>
-                  </li>
-                  <!-- Slide 4 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 4"
-                      />
-                      <p>Jeans Classic</p>
-                    </div>
-                  </li>
-                  <!-- Slide 5 -->
-                  <li class="splide__slide">
-                    <div class="product-item">
-                      <img
-                        src="https://placehold.co/100x100"
-                        alt="Liked Product 5"
-                      />
-                      <p>Jacket Winter</p>
-                    </div>
-                  </li>
-                  <!-- Add more slides as needed -->
-                </ul>
-              </div>
-            </div>
-            <!-- End of Splide Container -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="latest-blog" class="padding-large overflow-hidden pt-0">
-      <div class="container">
-        <div class="row">
-          <div class="section-header text-center">
-            <h2 class="section-title">Recent Blogs</h2>
-            <p>Read Our News & articles about updates</p>
-          </div>
-          <div class="row d-flex flex-wrap">
-            <article class="col-md-4 post-item">
-              <div class="image-holder">
-                <a href="single-post.html">
-                  <img
-                    src="images/post-item2.jpg"
-                    alt="post"
-                    class="post-image"
-                  />
-                </a>
-              </div>
-              <div class="post-content">
-                <div class="post-header">
-                  <h3 class="post-title">
-                    <a href="single-post.html"
-                      >Best Comfortable Clothes Ideas</a
-                    >
-                  </h3>
-                  <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
-                </div>
-              </div>
-            </article>
-            <article class="col-md-4 post-item">
-              <div class="image-holder">
-                <a href="single-post.html">
-                  <img
-                    src="images/post-item8.jpg"
-                    alt="post"
-                    class="post-image"
-                  />
-                </a>
-              </div>
-              <div class="post-content">
-                <div class="post-header">
-                  <h3 class="post-title">
-                    <a href="single-post.html"
-                      >Casual Denim Clothing for women</a
-                    >
-                  </h3>
-                  <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
-                </div>
-              </div>
-            </article>
-            <article class="col-md-4 post-item">
-              <div class="image-holder">
-                <a href="single-post.html">
-                  <img
-                    src="images/post-item9.jpg"
-                    alt="post"
-                    class="post-image"
-                  />
-                </a>
-              </div>
-              <div class="post-content">
-                <div class="post-header">
-                  <h3 class="post-title">
-                    <a href="single-post.html">Best Poses for fashion photo</a>
-                  </h3>
-                  <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="btn-center">
-            <a href="my-account.html#" class="btn btn-medium btn-black"
-              >Read All</a
+              <a href="index.html">Dashboard</a>
+            </li>
+            <li
+              class="list-group-item p-0 border-dark border-bottom-0 overflow-hidden"
             >
-          </div>
+              <a href="products.html">Products</a>
+            </li>
+            <li
+              class="list-group-item p-0 border-dark border-bottom-0 overflow-hidden"
+            >
+              <a href="categories.html">Categories</a>
+            </li>
+            <li
+              class="list-group-item p-0 border-dark border-bottom-0 overflow-hidden"
+            >
+              <a href="users.html">Users</a>
+            </li>
+            <li class="list-group-item p-0 border-dark overflow-hidden">
+              <a href="orders.html">Orders</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section> -->
 
-
-
-    <section id="instagram" class="padding-large overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="section-header text-center">
-            <h2 class="section-title">Shop our insta</h2>
+        <div class="admin-content">
+          <div
+            class="categories-header d-flex justify-content-between align-items-center mb-4"
+          >
+            <h3>Product Information</h3>
+            <a href="products.html" class="btn btn-common">Back to Products</a>
           </div>
-          <div class="row d-flex flex-wrap">
-            <figure class="col instagram-item magnific position-relative">
-              <a href="my-account.html#" class="">
-                <img
-                  src="images/insta-item1.jpg"
-                  alt="instagram"
-                  class="insta-image"
-                />
-                <div class="icon-overlay d-flex justify-content-center">
-                  <i class="icon icon-instagram1"></i>
-                </div>
-              </a>
-            </figure>
-            <figure class="col instagram-item magnific position-relative">
-              <a href="my-account.html#" class="">
-                <img
-                  src="images/insta-item2.JPG"
-                  alt="instagram"
-                  class="insta-image"
-                />
-                <div class="icon-overlay d-flex justify-content-center">
-                  <i class="icon icon-instagram1"></i>
-                </div>
-              </a>
-            </figure>
-            <figure class="col instagram-item magnific position-relative">
-              <a href="my-account.html#" class="">
-                <img
-                  src="images/insta-item3.jpg"
-                  alt="instagram"
-                  class="insta-image"
-                />
-                <div class="icon-overlay d-flex justify-content-center">
-                  <i class="icon icon-instagram1"></i>
-                </div>
-              </a>
-            </figure>
-            <figure class="col instagram-item magnific position-relative">
-              <a href="my-account.html#" class="">
-                <img
-                  src="images/insta-item4.jpg"
-                  alt="instagram"
-                  class="insta-image"
-                />
-                <div class="icon-overlay d-flex justify-content-center">
-                  <i class="icon icon-instagram1"></i>
-                </div>
-              </a>
-            </figure>
-            <figure class="col instagram-item magnific position-relative">
-              <a href="my-account.html#" class="">
-                <img
-                  src="images/insta-item5.jpg"
-                  alt="instagram"
-                  class="insta-image"
-                />
-                <div class="icon-overlay d-flex justify-content-center">
-                  <i class="icon icon-instagram1"></i>
-                </div>
-              </a>
-            </figure>
+
+          <div class="dashboard-search d-flex gap-2 mb-4">
+            <input type="text" class="form-control" placeholder="Search..." />
+            <button type="button" class="btn btn-common">Search</button>
           </div>
+
+          <form>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label for="productName" class="form-label">Product Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="productName"
+                  placeholder="e.g. Classic Cotton Tee"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="productSlug" class="form-label">Slug</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="productSlug"
+                  placeholder="e.g. classic-cotton-tee"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="productCategory" class="form-label">Category</label>
+                <select class="form-select" id="productCategory">
+                  <option selected>Men T-Shirts</option>
+                  <option>Women T-Shirts</option>
+                  <option>Hoodies</option>
+                  <option>Jackets</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="productPrice" class="form-label">Price</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="productPrice"
+                  placeholder="39"
+                />
+              </div>
+              <div class="col-md-3">
+                <label for="productSalePrice" class="form-label">Sale Price</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="productSalePrice"
+                  placeholder="29"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="productStock" class="form-label">Stock Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="productStock"
+                  placeholder="100"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="productSku" class="form-label">SKU</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="productSku"
+                  placeholder="TSHIRT-001"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="productStatus" class="form-label">Status</label>
+                <select class="form-select" id="productStatus">
+                  <option selected>Active</option>
+                  <option>Inactive</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="productImageUrl" class="form-label">Image URL</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="productImageUrl"
+                  placeholder="/images/product-item1.jpg"
+                />
+              </div>
+              <div class="col-12">
+                <label for="productDescription" class="form-label"
+                  >Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="productDescription"
+                  rows="5"
+                  placeholder="Write a short product description..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-4">
+              <button type="submit" class="btn btn-common">Save Product</button>
+              <a href="products.html" class="btn btn-outline-dark">Cancel</a>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -606,7 +423,7 @@
             <div class="row d-flex flex-wrap justify-content-between">
               <div class="col-lg-3 col-sm-6">
                 <div class="footer-menu menu-001">
-                  <img src="images/dark-logo.png" alt="logo" />
+                  <img src="/images/dark-logo.png" alt="logo" />
                   <p>
                     Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit
                     hendrerit. Gravida massa volutpat aenean odio erat nullam
@@ -620,34 +437,34 @@
                       name="Subscribe"
                       placeholder="Enter your email address..."
                     />
-                    <a href="my-account.html#">
+                    <a href="index.html#">
                       <i class="icon icon-send"></i>
                     </a>
                   </div>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
                       <li>
-                        <a href="my-account.html#">
+                        <a href="index.html#">
                           <i class="icon icon-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="my-account.html#">
+                        <a href="index.html#">
                           <i class="icon icon-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="my-account.html#">
+                        <a href="index.html#">
                           <i class="icon icon-instagram1"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="my-account.html#">
+                        <a href="index.html#">
                           <i class="icon icon-youtube"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="my-account.html#">
+                        <a href="index.html#">
                           <i class="icon icon-behance"></i>
                         </a>
                       </li>
@@ -660,19 +477,19 @@
                   <h5 class="widget-title">Quick Links</h5>
                   <ul class="menu-list list-unstyled text-uppercase">
                     <li class="menu-item">
-                      <a href="my-account.html#">Home</a>
+                      <a href="index.html#">Home</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">About</a>
+                      <a href="index.html#">About</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Shop</a>
+                      <a href="index.html#">Shop</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Blogs</a>
+                      <a href="index.html#">Blogs</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Contact</a>
+                      <a href="index.html#">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -682,19 +499,19 @@
                   <h5 class="widget-title">Help & Info</h5>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item">
-                      <a href="my-account.html#">Track Your Order</a>
+                      <a href="index.html#">Track Your Order</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Returns Policies</a>
+                      <a href="index.html#">Returns Policies</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Shipping + Delivery</a>
+                      <a href="index.html#">Shipping + Delivery</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Contact Us</a>
+                      <a href="index.html#">Contact Us</a>
                     </li>
                     <li class="menu-item">
-                      <a href="my-account.html#">Faqs</a>
+                      <a href="index.html#">Faqs</a>
                     </li>
                   </ul>
                 </div>
@@ -708,7 +525,7 @@
                   </p>
                   <p>
                     If you need support? Just give us a call.
-                    <a href="my-account.html">+55 111 222 333 44</a>
+                    <a href="index.html">+55 111 222 333 44</a>
                   </p>
                 </div>
               </div>
@@ -725,8 +542,8 @@
             <div class="Shipping d-flex">
               <p>We ship with:</p>
               <div class="card-wrap">
-                <img src="images/dhl.png" alt="visa" />
-                <img src="images/shippingcard.png" alt="mastercard" />
+                <img src="/images/dhl.png" alt="visa" />
+                <img src="/images/shippingcard.png" alt="mastercard" />
               </div>
             </div>
           </div>
@@ -734,9 +551,9 @@
             <div class="payment-method d-flex justify-content-md-center">
               <p>Payment options:</p>
               <div class="card-wrap">
-                <img src="images/visa.jpg" alt="visa" />
-                <img src="images/mastercard.jpg" alt="mastercard" />
-                <img src="images/paypal.jpg" alt="paypal" />
+                <img src="/images/visa.jpg" alt="visa" />
+                <img src="/images/mastercard.jpg" alt="mastercard" />
+                <img src="/images/paypal.jpg" alt="paypal" />
               </div>
             </div>
           </div>
@@ -755,9 +572,9 @@
     </div>
 
     <!-- script ================================================== -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/script.js"></script>
 
     <!-- Bootstarp script ================================================== -->
     <script
@@ -769,33 +586,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Check if the element exists before initializing
-        const sliderElement = document.getElementById("liked-products-slider");
-        if (sliderElement) {
-          new Splide(sliderElement, {
-            type: "loop", // Enables infinite looping
-            perPage: 3, // Show 3 slides at once on larger screens
-            perMove: 1, // Move 1 slide at a time
-            pagination: true, // Enable pagination dots
-            arrows: true, // Enable navigation arrows
-            gap: "1rem", // Gap between slides
-            // Responsive settings
-            breakpoints: {
-              1024: {
-                // Tablet
-                perPage: 2,
-              },
-              768: {
-                // Mobile
-                perPage: 1,
-              },
-            },
-          }).mount(); // Mount the slider
-        }
-      });
-    </script>
   </body>
 </html>

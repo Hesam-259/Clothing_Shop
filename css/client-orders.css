@@ -1,0 +1,118 @@
+.client-orders-part,
+.client-invoice-part {
+  padding: 4em 2em;
+  background-color: var(--light-color);
+}
+
+.client-orders-header,
+.client-invoice-header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.client-orders-header h2,
+.client-invoice-header h2 {
+  font-size: 2.3em;
+  margin-bottom: 0.4em;
+  color: var(--dark-color);
+}
+
+.client-orders-card,
+.client-invoice-card,
+.client-summary-card {
+  border: 1px solid var(--dark-color);
+  background: var(--light-color);
+  padding: 1.5em;
+}
+
+.client-orders-table-wrapper,
+.client-invoice-table-wrapper {
+  overflow-x: auto;
+}
+
+.client-orders-table th,
+.client-orders-table td,
+.client-invoice-table th,
+.client-invoice-table td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.client-orders-actions,
+.client-invoice-actions {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.client-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.client-summary-card h4 {
+  margin: 0 0 0.4em;
+  font-size: 1.05em;
+}
+
+.client-summary-card p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.client-invoice-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.client-invoice-meta h4,
+.client-invoice-totals h4 {
+  margin-top: 0;
+}
+
+.client-invoice-totals {
+  margin-top: 1.5em;
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.client-invoice-total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.client-invoice-total-row.total {
+  border-top: 1px solid var(--dark-color);
+  padding-top: 0.6em;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .client-orders-actions,
+  .client-invoice-actions {
+    flex-direction: column;
+  }
+
+  .client-orders-actions .btn,
+  .client-invoice-actions .btn {
+    width: 100%;
+  }
+
+  .client-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-invoice-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .client-invoice-totals {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
